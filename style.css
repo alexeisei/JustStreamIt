@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+/* Style modal*/
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 500px;
+	width: 50%;
+	height: 50%;
+	background: none;
+}
+.modal-content {
+	background-color: rgba(228, 180, 80, 1);
+	padding: 10px;
+	width: 80%;
+	border: solid black;
+	border-style: outset;
+	border-radius: 10px;
+	box-shadow: 6px 6px 15px black;
+}
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.close :hover,
+.close :focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* style for carrousel */
+.previous {
+	color: black;	
+	left: 180px;
+	z-index: 10;
+	font-size: 20px;
+	font-weight: 700;
+}
+.next {
+	color: black;
+	right: 180px;	
+	font-size: 20px;
+	z-index: 10;
+	font-weight: 700;
+}
+.nav-btn {
+	background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+	cursor: pointer;
+	border: solid black;
+	border-radius: 10px;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+.nav-btn:hover {
+	background: white;
+}
+.item {
+	margin: 20px;
+	margin-top: 5px;
+	transition: transform .3s;
+	transform: translate3d(0, -1px, 0);
+	cursor: pointer;
+}
+.item.hidden {
+	display: none;
+}
+.item.shows {
+	display: block;
+}
+.item:hover {
+	transform: translate3d(0, -10px, 0);
+}
+
+/*body style*/
+body {
+	background: linear-gradient(to bottom, rgba(0, 131, 255, 0.56), rgba(9, 71, 131, 0.56));
+	color: black;
+	font-family: papyrus, cursive;
+}
+
+/*header style*/
+header {
+	border: solid;
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	background: linear-gradient(to right, rgba(37, 37, 37, 0.616), rgba(154, 156, 158, 0.562));
+	border-radius: 10px;
+	box-shadow: 6px 6px 15px black;
+}
+header img {
+	width: 120px;
+	margin-left: 20px;
+	border-radius: 20px;
+	padding: 15px;
+}
+header h1 {
+	font-size: 40px;
+}
+header nav {
+	margin-right: 20px;
+}
+header ul.nav_list {
+	font-size: 20px;
+	list-style: none;
+}
+header li {
+	display: inline-block;
+	margin: 20px;
+}
+
+/*best movie style*/
+#top_movie {
+	text-align: center;
+	padding-top: 25px;
+}
+section.the_best_movie {
+	display: flex;
+	justify-content: space-between;
+	border: solid;
+	border-radius: 10px;
+	box-shadow: 6px 6px 15px black;
+	background: linear-gradient(to right, rgba(37, 37, 37, 0.616), rgba(154, 156, 158, 0.562));
+}
+section.the_best_movie div.description {
+	flex-direction: column;
+	margin-left: 100px;
+}
+section.the_best_movie div.description h2 {
+	flex-direction: column;
+	margin-left: 15px;
+	margin-top: 100px;
+}
+section.the_best_movie img {
+	width: 200px;
+	margin-right: 650px;
+}
+
+/* Style categories  best movies*/
+section.best_movies {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+section.best_movies h2 {	
+	padding-top: 25px;
+}
+section.best_movies div.carrousel {
+	padding: 5px;
+	margin: 0 auto;
+	display: flex;
+	box-sizing: border-box;
+	align-items: center;
+}
+section.best_movies img {
+	border: solid;
+	max-height: 250px;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 10px;
+	box-shadow: 6px 6px 15px black;
+	background: linear-gradient(to right, rgba(37, 37, 37, 0.616), rgba(154, 156, 158, 0.562));
+}
+.runmovie {
+	box-shadow: inset 0px 1px 0px 0px #fce2c1;
+	background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+	background-color: #ffc477;
+	border-radius: 6px;
+	border: solid black;
+	display: inline-block;
+	cursor: pointer;
+	color: black;
+	font-family: papyrus, cursive;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #cc9f52;
+}
+.modalshow {
+	box-shadow: inset 0px 1px 0px 0px #fce2c1;
+	background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+	background-color: #ffc477;
+	border-radius: 6px;
+	border: solid black;
+	display: inline-block;
+	cursor: pointer;
+	color: black;
+	font-family: papyrus, cursive;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 6px 24px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #cc9f52;
+}
+.runmovie:hover {
+	background: white;
+}
+.modalshow:hover {
+	background: white;
+}
+
+/* Style footer  */
+footer {
+	margin-top: 25px;
+	height: 50px;
+	width: 100%;
+	background: linear-gradient(to right, rgba(37, 37, 37, 0.616), rgba(154, 156, 158, 0.562));
+	box-shadow: 6px 6px 15px black;
+	border: solid;
+	border-radius: 10px;
+	text-align: center;
+}
+.conclusion {
+	width: 100%;
+	font-size: 30px;
+	margin: auto;
+}

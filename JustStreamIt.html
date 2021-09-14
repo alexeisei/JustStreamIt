@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" />
+	<title>JustStreamIt !</title>
+	<script src="all_categories_best_movie.js" defer></script>
+	<script src="best_movies.js" defer></script>
+	<script src="modal.js" defer></script>
+	<script src="carousel.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<img src="logo.png" alt="Logo">
+		<h1>Welcome to the best streaming site on the net !</h1>
+		<nav>
+			<ul class="nav_list">
+				<li><a href="">Home</a></li>
+				<li><a href="">Categories</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- modal -->
+	<div class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="info">
+				<p>Movie title: <span id="title"></span> </p>
+				<p>Movie genre: <span id="genres"></span></p>
+				<p>Release date: <span id="date"></span></p>
+				<p>Rating: <span id="rated"></span> </p>
+				<p>Imdb score: <span id="imdb"></span></p>
+				<p>Director: <span id="real"></span></p>
+				<p>Actor's list: <span id="actors"></span></p>
+				<p>Length: <span id="time"></span> min</p>
+				<p>Origin country: <span id="country"></span></p>
+				<p>Box Offic results: <span id="box"></span></p>
+				<p>Summary: <span id="resum"></span></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- best movie -->
+	<h2 id="top_movie">Best rated movie</h2>
+	<section class="the_best_movie">
+		<div class="description">
+			<div>
+				<h2 class="titre">bmovie_title</h2>
+			</div>
+			<div>
+				<button class="runmovie">Play movie</button>
+				<button class="modalshow">More informations</button>
+			</div>
+		</div>
+		<img id="img0" src="img/logo.png" alt="Logo">
+	</section>
+
+	<!-- top rated movies -->
+	<section class="best_movies">
+		<h2>Best movies for all categories</h2>
+		<div class="carrousel top-movies">
+			<div class="previous nav-btn">prev</div>
+			<div class="item 1 shows"> <img id="img1" src="img/logo.png" alt="Logo"></div>
+			<div class="item 1 shows"><img id="img2" src="img/logo.png" alt="Logo"></div>
+			<div class="item 1 shows"><img id="img3" src="img/logo.png" alt="Logo"></div>
+			<div class="item 1 shows"><img id="img4" src="img/logo.png" alt="Logo"></div>
+			<div class="item 1 shows"><img id="img5" src="img/logo.png" alt="Logo"></div>
+			<div class="item 1 hidden"><img id="img6" src="img/logo.png" alt="Logo"></div>
+			<div class="item 1 hidden"><img id="img7" src="img/logo.png" alt="Logo"></div>
+			<div class="next nav-btn">next</div>
+		</div>
+	</section>
+
+	<!-- movies in category 1-->
+	<section class="best_movies">
+		<h2>Best movies for the Adventure category</h2>
+		<div class="carrousel adventure">
+			<div class="previous f nav-btn">prev</div>
+			<div class="item 2 shows"><img id="img8" src="img/logo.png" alt="Logo"></div>
+			<div class="item 2 shows"><img id="img9" src="img/logo.png" alt="Logo"></div>
+			<div class="item 2 shows"><img id="img10" src="img/logo.png" alt="Logo"></div>
+			<div class="item 2 shows"><img id="img11" src="img/logo.png" alt="Logo"></div>
+			<div class="item 2 shows"><img id="img12" src="img/logo.png" alt="Logo"></div>
+			<div class="item 2 hidden"><img id="img13" src="img/logo.png" alt="Logo"></div>
+			<div class="item 2 hidden"><img id="img14" src="img/logo.png" alt="Logo"></div>
+			<div class="next f nav-btn">next</div>
+		</div>
+	</section>
+
+	<!-- movies in category 2-->
+	<section class="best_movies">
+		<h2>Best movies for the Comedy category</h2>
+		<div class="carrousel comedy">
+			<div class="previous h nav-btn">prev</div>
+			<div class="item 3 shows"><img id="img15" src="img/logo.png" alt="Logo"></div>
+			<div class="item 3 shows"><img id="img16" src="img/logo.png" alt="Logo"></div>
+			<div class="item 3 shows"><img id="img17" src="img/logo.png" alt="Logo"></div>
+			<div class="item 3 shows"><img id="img18" src="img/logo.png" alt="Logo"></div>
+			<div class="item 3 shows"><img id="img19" src="img/logo.png" alt="Logo"></div>
+			<div class="item 3 hidden"><img id="img20" src="img/logo.png" alt="Logo"></div>
+			<div class="item 3 hidden"><img id="img21" src="img/logo.png" alt="Logo"></div>
+			<div class="next h nav-btn">next</div>
+		</div>
+	</section>
+
+	<!-- movies in category 3-->
+	<section class="best_movies">
+		<h2>Best movies for the Horror category</h2>
+		<div class="carrousel horror">
+			<div class="previous m nav-btn">prev</div>
+			<div class="item 4 shows"><img id="img22" src="img/logo.png" alt="Logo"></div>
+			<div class="item 4 shows "><img id="img23" src="img/logo.png" alt="Logo"></div>
+			<div class="item 4 shows "><img id="img24" src="img/logo.png" alt="Logo"></div>
+			<div class="item 4 shows "><img id="img25" src="img/logo.png" alt="Logo"></div>
+			<div class="item 4 shows "><img id="img26" src="img/logo.png" alt="Logo"></div>
+			<div class="item 4 hidden "><img id="img27" src="img/logo.png" alt="Logo"></div>
+			<div class="item 4 hidden"><img id="img28" src="img/logo.png" alt="Logo"></div>
+			<div class="next m nav-btn">next</div>
+		</div>
+	</section>
+
+	<footer>
+		<span class="conclusion">JustStreamIt, the best streaming site on the net !</span>
+	</footer>
+</body>
+
+</html>
